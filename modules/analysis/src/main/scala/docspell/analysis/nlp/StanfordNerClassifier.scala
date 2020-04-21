@@ -54,7 +54,7 @@ object StanfordNerClassifier {
     check(lang match {
       case Language.German =>
         getClass.getResource(
-          "/edu/stanford/nlp/models/ner/german.conll.germeval2014.hgc_175m_600.crf.ser.gz"
+          "/edu/stanford/nlp/models/ner/german.distsim.crf.ser.gz"
         )
       case Language.English =>
         getClass.getResource(

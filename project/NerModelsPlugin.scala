@@ -59,7 +59,7 @@ object NerModelsPlugin extends AutoPlugin {
   }
 
   private val nerModels = List(
-    "german.conll.germeval2014.hgc_175m_600.crf.ser.gz",
+    "german.distsim.crf.ser.gz",
     "english.all.3class.distsim.crf.ser.gz"
   )
 }

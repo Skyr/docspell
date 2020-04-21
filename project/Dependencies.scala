@@ -127,7 +127,7 @@ object Dependencies {
 
   val stanfordNlpModels = Seq(
     "edu.stanford.nlp" % "stanford-corenlp" % StanfordNlpVersion classifier "models-german",
-    "edu.stanford.nlp" % "stanford-corenlp" % StanfordNlpVersion classifier "models-english"
+    "edu.stanford.nlp" % "stanford-corenlp" % StanfordNlpVersion classifier "models"
   )
 
   val tika = Seq(
