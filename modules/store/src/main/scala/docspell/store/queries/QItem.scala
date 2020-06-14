@@ -288,7 +288,7 @@ object QItem {
       IC.state.prefix("i").isOneOf(q.states),
       IC.incoming.prefix("i").isOrDiscard(q.direction),
       name
-        .map(n => or(IC.name.prefix("i").lowerLike(n), IC.notes.prefix("i").lowerLike(n)))
+        .map(n => or(IC.name.prefix("i").lowerLike(n.toLowerCase), IC.notes.prefix("i").lowerLike(n.toLowerCase)))
         .getOrElse(Fragment.empty),
       RPerson.Columns.pid.prefix("p0").isOrDiscard(q.corrPerson),
       ROrganization.Columns.oid.prefix("o0").isOrDiscard(q.corrOrg),
